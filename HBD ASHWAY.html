@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HAPPY BIRTHDAY SALMAN  &lt;3 </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style media="screen">
+      .popup{
+          background-color: #d8cbc4;
+          width: 300px;
+          padding: 20px 20px;
+          position:fixed;
+          transform: translate(-50%,-50%);
+          left: 50%;
+          top: 50%;
+          border-radius: 8px;
+          font-family: "Poppins",sans-serif;
+          display: none; 
+          text-align: center;
+          z-index: 3;
+          background-color: #fff2de;
+          opacity: 75%;
+      }
+      .popup button{
+        padding-right: 20px;
+          display:flex;
+          margin:  0 0 10px auto;
+          background-color: transparent;
+          font-size: 30px;
+          font-weight: bold;
+          color: #3d251e;
+          background: none;
+          border-radius: 100%;
+          width: 10px;
+          height:30px;
+          border: 10px;;
+          outline: none;
+          cursor: pointer;
+          z-index: 3;
+      }
+      .popup h2{
+        margin-top: -20px;
+        z-index: 3;
+      }
+      .popup p{
+          font-size: 14px;
+          text-align: justify;
+          margin: 20px 0;
+          line-height: 25px;
+          z-index: 3;
+      }
+      
+          </style>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  
+  </head>
+  <body>
+    <div class="popup">
+      <button id="close">&times;</button>
+      <h2 style="text-align: center; color: #3d251e; font-weight: bold;">
+        Hello Salman!  &lt;3</h2>
+      <p style="text-align: center; color: #3d251e; font-weight: bold;">
+        Make sure you allow microphone access and turn up the volume.
+        <br>
+        Add the candles on the cake then blow on the screen for a surprise!
+        <br>
+        I love you :&#41;
+      </p>
+  </div>
+
+    <div class="candle-count-display">
+      HAPPY BIRTHDAY SALMAN<svg class="heart" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke=""><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="1.488"></g><g id="SVGRepo_iconCarrier"> <path d="M2 9.1371C2 14 6.01943 16.5914 8.96173 18.9109C10 19.7294 11 20.5 12 20.5C13 20.5 14 19.7294 15.0383 18.9109C17.9806 16.5914 22 14 22 9.1371C22 4.27416 16.4998 0.825464 12 5.50063C7.50016 0.825464 2 4.27416 2 9.1371Z" fill="#ff6999"></path> </g></svg>
+    </div>
+    <div class="cake">
+      <div id="candleCount" style="display:none;"></div>
+      <div class="plate"></div>
+      <div class="layer layer-bottom"></div>
+      <div class="layer layer-middle"></div>
+      <div class="layer layer-top"></div>
+      <div class="icing"></div>
+      <div class="drip drip1"></div>
+      <div class="drip drip2"></div>
+      <div class="drip drip3"></div>
+    </div>
+    
+    </button>
+    <br>
+    <div class="footer2">
+      <a href="index.html">
+        <button style="font-family: 'Courier New', Courier, monospace; font-weight: bold; padding: 10px; background-color: #3d251e; border-radius: 30px; border-color:#fe4f7b00; color: #fff2de;">Open your birthday card!</button>
+    </a>
+                    </div>
+    
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.2"></script>
+        <!--Script-->
+        <script type="text/javascript">
+          window.addEventListener("load", function(){
+              setTimeout(
+                  function open(event){
+                      document.querySelector(".popup").style.display = "block";
+                  },
+                  200 
+              )
+          });
+          
+          
+          document.querySelector("#close").addEventListener("click", function(){
+              document.querySelector(".popup").style.display = "none";
+          });
+              </script>
+  </body>
+</html>
